@@ -1,28 +1,30 @@
 {
-  "name": "kutt",
-  "version": "3.2.2",
+  "name": "shortflix",
+  "version": "3.2.3",
   "description": "Modern URL shortener.",
   "main": "./server/server.js",
   "scripts": {
-    "dev": "node --watch-path=./server --watch-path=./custom server/server.js",
+    "dev": "node --watch server/server.js",
     "start": "node server/server.js --production",
     "migrate": "knex migrate:latest",
     "migrate:make": "knex migrate:make",
-    "docs:build": "cd docs/api && node generate && cd ../.."
+    "docs:build": "cd docs/api && node generate && cd ../..",
+    "vercel-build": "echo 'No build step needed for backend'",
+    "vercel-dev": "node server/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thedevs-network/kutt.git"
+    "url": "git+https://github.com/HAmmadsiamil007/ShortFlix.git"
   },
   "keywords": [
     "url-shortener"
   ],
-  "author": "Pouria Ezzati <ezzati.upt@gmail.com>",
+  "author": "Your Name <your.email@example.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thedevs-network/kutt/issues"
+    "url": "https://github.com/HAmmadsiamil007/ShortFlix/issues"
   },
-  "homepage": "https://github.com/thedevs-network/kutt#readme",
+  "homepage": "https://github.com/HAmmadsiamil007/ShortFlix#readme",
   "dependencies": {
     "bcryptjs": "2.4.3",
     "better-sqlite3": "11.8.1",
